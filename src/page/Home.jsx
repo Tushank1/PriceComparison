@@ -11,6 +11,7 @@ import Shoes from "../Data/Shoes";
 import Beauty from "../Data/Beauty";
 import Phones from "../Data/Phone";
 import Perfume from "../Data/Perfume";
+import Banner_2 from "../components/Banner_2";
 
 function Home() {
   return (
@@ -54,6 +55,7 @@ function Home() {
         subtitle="Viral favourites that are topping the list right now"
         beauty={Beauty}
       />
+      <Banner_2 />
     </div>
   );
 }

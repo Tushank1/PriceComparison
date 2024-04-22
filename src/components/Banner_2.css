@@ -1,4 +1,4 @@
-.banner {
+.banner_2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@
     }
 
     .text {
-        left: 50%;
+        left: 45%;
         .heading {
             position: absolute;
             display: flex;
@@ -33,7 +33,7 @@
             z-index: 1;
             transform: translate(-50%,-50%);
             color: white;
-            width: 288px;
+            width: 278px;
             height: 100px;
             /* border: 1px solid black; */
             word-spacing: 1;
@@ -54,13 +54,12 @@
                 z-index: 1;
                 color: white;
                 transform: translate(-50%,-50%);
-                height: 20px;
-                width: 320px;
+                height: 50px;
+                width: 936px;
                 /* border: 1px solid black; */
 
                 p {
-                    font-weight: 600;
-                    font-size: medium;
+                    font-weight: 500;
                 }
             
         }
@@ -69,7 +68,7 @@
     .icon {
         position: absolute;
         bottom: 30px;
-        right: 40px;
+        right: 30px;
         display: inline-block;
         color: rgba(255, 37, 37, 0.797);
         font-size: xx-large;

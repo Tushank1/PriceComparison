@@ -9,7 +9,7 @@ function Header() {
           <span>Klarna</span>
         </div>
         <div className="logo_text">
-          <span>PriceRunner</span>
+          <span>PriceCompare</span>
         </div>
       </div>
 
