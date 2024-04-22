@@ -1,0 +1,11 @@
+.header_icon {
+    display: flex;
+    padding-left: 25px;
+    margin-top: 30px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+.header_icon::-webkit-scrollbar {
+    display: none;
+}
