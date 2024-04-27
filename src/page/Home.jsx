@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import Body_top from "../components/Body_top";
 import Body_top_bottom from "../components/Body_top_bottom";
 import ItemData from "../components/ItemData";
@@ -16,7 +15,6 @@ import Banner_2 from "../components/Banner_2";
 function Home() {
   return (
     <div>
-      <Header />
       <Body_top />
       <Body_top_bottom />
       <ItemData

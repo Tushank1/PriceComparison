@@ -1,0 +1,23 @@
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    .price-range {
+        font-weight: bold;
+    }
+
+    .popularity-rank {
+        font-weight: bold;
+    }
+
+    .popularity-category {
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+}
