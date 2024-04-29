@@ -1,0 +1,165 @@
+.top_heading {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid pink; */
+    
+    p {
+        letter-spacing: 1;
+        font-weight: 300;
+        font-size: large;
+    }
+}
+
+.disposal {
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid purple; */
+    letter-spacing: 1;
+
+    h2 {
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-weight: 350;
+        
+        .target {
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.searching {
+    width: 100%;
+    height: 1245px;
+    /* border: 1px solid peru; */
+    letter-spacing: 1;
+
+    h2 {
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 350;
+        margin-bottom: 10px;
+    }
+
+    img{
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.filter{
+    width: 100%;
+    height: 670px;
+    /* border-radius: 1px solid grey; */
+
+    h2 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 350;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.compare{
+    width: 100%;
+    height: 1685px;
+    /* border: 1px solid green; */
+
+    h2 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 350;
+        margin-bottom: 10px;
+    }
+
+    li {
+        font-size: large;
+        font-weight: 700;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.table {
+    width: 100%;
+    height: 1640px;
+    /* border: 1px solid greenyellow; */
+
+    h2 {
+        font-weight: 500;
+    }
+    
+    p {
+        font-weight: 350;
+        margin-bottom: 10px;
+    }
+    
+    li {
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.version {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid blue; */
+
+    h2 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 350;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 270px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        font-size: medium;
+        font-weight: 650;
+        /* border-bottom: 2px solid black; */
+        color: black;
+    }
+}

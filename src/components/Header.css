@@ -3,6 +3,10 @@
     display: flex;
     margin-bottom: 8px;
     border-bottom: 1px solid lightgrey;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .header_left {
