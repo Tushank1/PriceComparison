@@ -33,34 +33,35 @@
             z-index: 1;
             transform: translate(-50%,-50%);
             color: white;
-            width: 288px;
-            height: 100px;
+            width: 437px;
+            height: 135px;
             /* border: 1px solid black; */
             word-spacing: 1;
             word-wrap: normal;
 
             h1 {
                 margin: 0;
-                font-size: xx-large;
-                font-weight: 900;
+                font-size: xxx-large;
+                font-weight: bolder;
+                text-align: center;
             }
         }
 
         .para {
                 position: absolute;
                 display: inline-block;
-                top: 55%;
-                left: 52%;
+                top: 62%;
+                left: 54%;
                 z-index: 1;
                 color: white;
                 transform: translate(-50%,-50%);
-                height: 20px;
-                width: 320px;
+                height: 35px;
+                width: 490px;
                 /* border: 1px solid black; */
 
                 p {
-                    font-weight: 600;
-                    font-size: medium;
+                    font-weight: 670;
+                    font-size: larger;
                 }
             
         }

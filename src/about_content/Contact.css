@@ -1,0 +1,37 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+
+    h2 {
+        font-size: large;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    a {
+        color: black;
+    }
+
+    p {
+        font-size: medium;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    span {
+        border-bottom: 2px solid black;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+}

@@ -1,14 +1,14 @@
 import React from "react";
-import "./how_to_use.css";
+import "./AboutUs.css";
+import SelfUs from "../about_content/SelfUs";
+import History from "../about_content/History";
+import Guidelines from "../about_content/Guidelines";
+import Contact from "../about_content/Contact";
+import Management from "../about_content/Management";
+import Owner from "../about_content/Owner";
 import { useState } from "react";
-import Compare from "../content.jsx/Compare";
-import Default from "../content.jsx/Default";
-import Guide from "../content.jsx/Guide";
-import Tips from "../content.jsx/Tips";
-import Subscribe from "../content.jsx/Subscribe";
 
-function HowToUse() {
-  // Define state for content
+function AboutUs() {
   const [currentContent, setCurrentContent] = useState("content1");
   const [selectedSpan, setSelectedSpan] = useState("content1");
 
@@ -33,55 +33,67 @@ function HowToUse() {
     setCurrentContent("content5");
     setSelectedSpan("content5");
   };
+  const showContent6 = () => {
+    setCurrentContent("content6");
+    setSelectedSpan("content6");
+  };
 
   // Conditional rendering based on state
   const renderContent = () => {
     switch (currentContent) {
       case "content1":
-        return <Default />;
+        return <SelfUs />;
       case "content2":
-        return <Compare />;
+        return <History />;
       case "content3":
-        return <Guide />;
+        return <Guidelines />;
       case "content4":
-        return <Tips />;
+        return <Contact />;
       case "content5":
-        return <Subscribe />;
+        return <Management />;
+      case "content6":
+        return <Owner />;
     }
   };
 
   return (
-    <div className="container">
+    <div className="about_container">
       <div className="left">
         <span
           onClick={showContent1}
           className={selectedSpan === "content1" ? "selected" : ""}
         >
-          Find the right product
+          About Us
         </span>
         <span
           onClick={showContent2}
           className={selectedSpan === "content2" ? "selected" : ""}
         >
-          Compare prices
+          History
         </span>
         <span
           onClick={showContent3}
           className={selectedSpan === "content3" ? "selected" : ""}
         >
-          Guides & shopping tips
+          Sustainability and guidelines
         </span>
         <span
           onClick={showContent4}
           className={selectedSpan === "content4" ? "selected" : ""}
         >
-          6 tips: Make your online shopping climate-friendly
+          Contact us
         </span>
         <span
           onClick={showContent5}
           className={selectedSpan === "content5" ? "selected" : ""}
         >
-          Subscribe to our newsletter
+          Management
+        </span>
+        <span
+          onClick={showContent6}
+          className={selectedSpan === "content6" ? "selected" : ""}
+        >
+          Owners
         </span>
       </div>
       <div className="right">{renderContent()}</div>
@@ -89,4 +101,4 @@ function HowToUse() {
   );
 }
 
-export default HowToUse;
+export default AboutUs;

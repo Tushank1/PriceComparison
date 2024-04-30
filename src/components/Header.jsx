@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+
   return (
     <div className="header">
       <div className="header_left">
@@ -30,10 +33,22 @@ function Header() {
           <span>Guides</span>
         </div>
         <div className="header_element">
-          <span>How to use </span>
+          <span
+            onClick={() => {
+              navigate("/info");
+            }}
+          >
+            How to use{" "}
+          </span>
         </div>
         <div className="header_element">
-          <span>About us</span>
+          <span
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            About us
+          </span>
         </div>
       </div>
 
