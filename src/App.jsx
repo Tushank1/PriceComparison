@@ -7,6 +7,7 @@ import Error from "./page/Error";
 import Product from "./page/Product";
 import How_to_use from "./page/How";
 import About_us from "./page/About";
+import Interior from "./page/Interior";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/info" element={<How_to_use />} />
             <Route path="/about" element={<About_us />} />
+            <Route path="/home&Interior" element={<Interior />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>

@@ -1,6 +1,7 @@
 .body_icon {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .left {
@@ -15,7 +16,6 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     /* border: 1px solid black; */
     width: 665px;
     height: 425px;

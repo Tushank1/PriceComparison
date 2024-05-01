@@ -15,11 +15,20 @@ import { RiMentalHealthLine } from "react-icons/ri";
 import { IoIosBasketball } from "react-icons/io";
 import { GiScrewdriver } from "react-icons/gi";
 import { GiScooter } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 function Body_top_bottom() {
+  const navigate = useNavigate();
+
   return (
     <div className="header_icon">
-      <HeaderOption Icon={MdOutlineAddHomeWork} title="Home & Interior" />
+      <HeaderOption
+        Icon={MdOutlineAddHomeWork}
+        title="Home & Interior"
+        onClick={() => {
+          navigate("/home&Interior");
+        }}
+      />
       <HeaderOption Icon={GiCurledLeaf} title="Garden & Patio" />
       <HeaderOption Icon={MdFamilyRestroom} title="Kids & Family" />
       <HeaderOption Icon={MdOutlineToys} title="Toys & Hobbies" />

@@ -1,0 +1,93 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        width: 170px;
+        /* border: 1px solid black; */
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        span {
+            font-weight: 400;
+            font-size: small;
+            color: grey;
+        }
+
+        .slash {
+            color: grey;
+            font-size: small;
+        }
+
+        .start {
+            cursor: pointer;
+            font-weight: 650;
+            color: black;
+            &:hover {
+                top: 0;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        height: auto;
+        /* border: 1px solid black; */
+
+        h1 {
+            margin-bottom: 20px;
+        }
+}
+
+.mainCart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    /* justify-content: space-around; */
+
+        .productCart {
+            margin-left: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 350px;
+            /* border: 1px solid pink; */
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: contain;
+                /* border: 1px solid blue; */
+                background: transparent;
+                background-color: grey;
+                border-radius: 20px;
+            }
+
+            .otherMaterial {
+                margin-left: 10px;
+                h2 {
+                    font-weight: 600;
+                    font-size: large;
+                }
+
+                li {
+                    list-style-type: none;  
+                    width: auto;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
