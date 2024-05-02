@@ -26,22 +26,120 @@ function Body_top_bottom() {
         Icon={MdOutlineAddHomeWork}
         title="Home & Interior"
         onClick={() => {
-          navigate("/home&Interior");
+          navigate("/home&Interior", { state: { title: "Home & Interior" } });
         }}
       />
-      <HeaderOption Icon={GiCurledLeaf} title="Garden & Patio" />
-      <HeaderOption Icon={MdFamilyRestroom} title="Kids & Family" />
-      <HeaderOption Icon={MdOutlineToys} title="Toys & Hobbies" />
-      <HeaderOption Icon={SiPcgamingwiki} title="Gaming & Entertainment" />
-      <HeaderOption Icon={FaComputer} title="Computing" />
-      <HeaderOption Icon={MdOutlinePhoneAndroid} title="Phones & Wearables" />
-      <HeaderOption Icon={GiSoundWaves} title="Sound & Vision" />
-      <HeaderOption Icon={FaCameraRetro} title="Photography" />
-      <HeaderOption Icon={GiHanger} title="Clothing & Accessories" />
-      <HeaderOption Icon={RiMentalHealthLine} title="Health & Beauty" />
-      <HeaderOption Icon={IoIosBasketball} title="Sports & Outdoor" />
-      <HeaderOption Icon={GiScrewdriver} title="Do it yourself" />
-      <HeaderOption Icon={GiScooter} title="Motor Transport" />
+      <HeaderOption
+        Icon={GiCurledLeaf}
+        title="Garden & Patio"
+        onClick={() => {
+          navigate("/gardern&Patio", { state: { title: "Garden & Patio" } });
+        }}
+      />
+      <HeaderOption
+        Icon={MdFamilyRestroom}
+        title="Kids & Family"
+        onClick={() => {
+          navigate("/kids&Family", { state: { title: "Kids & Family" } });
+        }}
+      />
+      <HeaderOption
+        Icon={MdOutlineToys}
+        title="Toys & Hobbies"
+        onClick={() => {
+          navigate("/toys&Hobbies", { state: { title: "Toys & Hobbies" } });
+        }}
+      />
+      <HeaderOption
+        Icon={SiPcgamingwiki}
+        title="Gaming & Entertainment"
+        onClick={() => {
+          navigate("/gaming&Entertainment", {
+            state: { title: "Gaming & Entertainment" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={FaComputer}
+        title="Computing"
+        onClick={() => {
+          navigate("/computing", {
+            state: { title: "Computing" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={MdOutlinePhoneAndroid}
+        title="Phones & Wearables"
+        onClick={() => {
+          navigate("/phones&Wearables", {
+            state: { title: "Phones & Wearables" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={GiSoundWaves}
+        title="Sound & Vision"
+        onClick={() => {
+          navigate("/sound&Vision", {
+            state: { title: "Sound & Vision" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={FaCameraRetro}
+        title="Photography"
+        onClick={() => {
+          navigate("/photography", {
+            state: { title: "Photography" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={GiHanger}
+        title="Clothing & Accessories"
+        onClick={() => {
+          navigate("/clothing", {
+            state: { title: "Clothing & Accessories" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={RiMentalHealthLine}
+        title="Health & Beauty"
+        onClick={() => {
+          navigate("/health&Beauty", {
+            state: { title: "Health & Beauty" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={IoIosBasketball}
+        title="Sports & Outdoor"
+        onClick={() => {
+          navigate("/sportsOutdoor", {
+            state: { title: "Sports & Outdoor" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={GiScrewdriver}
+        title="Do it yourself"
+        onClick={() => {
+          navigate("/yourself", {
+            state: { title: "Do it yourself" },
+          });
+        }}
+      />
+      <HeaderOption
+        Icon={GiScooter}
+        title="Motor Transport"
+        onClick={() => {
+          navigate("/MotorTransport", {
+            state: { title: "Motor Transport" },
+          });
+        }}
+      />
     </div>
   );
 }

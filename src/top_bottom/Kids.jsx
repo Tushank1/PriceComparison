@@ -4,7 +4,7 @@ import { RxSlash } from "react-icons/rx";
 import InteriorCart from "./InteriorCart";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function HomeInterior({ InteriorData }) {
+function KidFamily({ family }) {
   const navigate = useNavigate();
   const location = useLocation();
   const title = location.state?.title;
@@ -26,7 +26,7 @@ function HomeInterior({ InteriorData }) {
       <div className="main">
         <h1>{title}</h1>
         <div className="mainCart">
-          {InteriorData?.map((interior) => {
+          {family?.map((interior) => {
             return (
               <InteriorCart
                 key={interior.id}
@@ -47,4 +47,4 @@ function HomeInterior({ InteriorData }) {
   );
 }
 
-export default HomeInterior;
+export default KidFamily;
