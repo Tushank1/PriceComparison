@@ -1,0 +1,24 @@
+.left{
+    display: flex;
+    margin-left: 20px;
+}
+
+.supreme {
+    display: flex;
+    flex-direction: row;
+}
+
+.category_icon {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.right {
+    display: flex;
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+}

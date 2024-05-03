@@ -11,9 +11,9 @@ const SoundVision = [
   },
   {
     id: 2,
-    img: "",
+    img: "https://www.pricerunner.com/category/138x138/cl2.jpg",
     name: "TVs",
-    sub1: "https://pricerunner.com/category/138x138/cl2.jpg",
+    sub1: "",
     sub2: "",
     sub3: "",
     sub4: "",

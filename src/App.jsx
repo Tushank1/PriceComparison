@@ -21,6 +21,7 @@ import HealthBeauty from "./page/Health&Beauty";
 import SportsOutdoor from "./page/Sports&Outdoor";
 import DoItYourself from "./page/DoItYourself";
 import Motor from "./page/Motor";
+import Categories from "./page/Categories";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/sportsOutdoor" element={<SportsOutdoor />} />
             <Route path="/yourself" element={<DoItYourself />} />
             <Route path="/MotorTransport" element={<Motor />} />
+            <Route path="/categories" element={<Categories />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>

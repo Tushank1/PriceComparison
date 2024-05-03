@@ -65,6 +65,7 @@
             height: 10px;
             filter: invert(1);
             margin-left: 10px;
+            transform: rotate(800px);
         }
 
         span {

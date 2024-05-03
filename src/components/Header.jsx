@@ -18,7 +18,12 @@ function Header() {
 
       <div className="header_center">
         <div className="header_element">
-          <div className="special">
+          <div
+            className="special"
+            onClick={() => {
+              navigate("/categories");
+            }}
+          >
             <span>All categories</span>
             <img src="/arrowDown.png" alt="ArrowDown" />
           </div>
