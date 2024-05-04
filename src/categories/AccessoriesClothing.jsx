@@ -11,7 +11,15 @@ function AccessoriesClothing() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/clothing", {
+              state: { title: "Clothing & Accessories" },
+            });
+          }}
+        >
+          Clothing & Accessories
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

@@ -11,7 +11,15 @@ function VisionSound() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/sound&Vision", {
+              state: { title: "Sound & Vision" },
+            });
+          }}
+        >
+          Sound & Vision
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

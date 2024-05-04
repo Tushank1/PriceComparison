@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
+  // const [isArrowRotated, setIsArrowRotated] = useState(false);
+  const location = useLocation();
+
+  const isArrowRotated = location.pathname === "/categories";
 
   return (
     <div className="header">
@@ -21,11 +25,21 @@ function Header() {
           <div
             className="special"
             onClick={() => {
-              navigate("/categories");
+              if (isArrowRotated) {
+                navigate("/");
+              } else {
+                navigate("/categories");
+              }
+              // Toggle the rotation state regardless of the current state
+              // setIsArrowRotated(!isArrowRotated);
             }}
           >
             <span>All categories</span>
-            <img src="/arrowDown.png" alt="ArrowDown" />
+            <img
+              src="/arrowDown.png"
+              alt="ArrowDown"
+              className={isArrowRotated ? "rotated" : ""}
+            />
           </div>
         </div>
         <div className="header_element">

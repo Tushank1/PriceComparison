@@ -1,4 +1,4 @@
-.main {
+.main_about {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -24,7 +24,7 @@
         margin-top: 15px;
         font-weight: 450;
     }
-    .extra {
+    .extra_about {
         font-weight: 500;
     }
 }

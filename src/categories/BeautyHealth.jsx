@@ -11,7 +11,15 @@ function BeautyHealth() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/health&Beauty", {
+              state: { title: "Health & Beauty" },
+            });
+          }}
+        >
+          Health & Beauty
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

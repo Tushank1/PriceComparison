@@ -11,7 +11,15 @@ function HobbiesToys() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/toys&Hobbies", {
+              state: { title: "Toys & Hobbies" },
+            });
+          }}
+        >
+          Toys & Hobbies
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

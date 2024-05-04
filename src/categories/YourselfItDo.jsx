@@ -11,7 +11,15 @@ function YourselfItDo() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/yourself", {
+              state: { title: "Do It Yourself" },
+            });
+          }}
+        >
+          Do It Yourself
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

@@ -11,7 +11,15 @@ function Yphoto() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/photography", {
+              state: { title: "Photography" },
+            });
+          }}
+        >
+          Photography
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

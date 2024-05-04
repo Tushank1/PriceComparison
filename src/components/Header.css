@@ -60,12 +60,15 @@
         align-items: center;
         justify-content: center;
         
+        .rotated {
+            transform: rotate(180deg);
+        }
+        
         img {
             width: 10px;
             height: 10px;
             filter: invert(1);
             margin-left: 10px;
-            transform: rotate(800px);
         }
 
         span {

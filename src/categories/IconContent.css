@@ -8,15 +8,16 @@
     flex-direction: row;
     height: auto;
     justify-content: space-between;
+    cursor: pointer;
 
     .cancel {
         font-size: 24px;
     }
 
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         width: auto;
-        /* border: 1px solid red; */
+        
     }
 }
 
@@ -42,7 +43,7 @@
                     object-fit: contain;
                     /* border: 1px solid blue; */
                     background: transparent;
-                    background-color: grey;
+                    background-color: rgb(234, 232, 232);
                     border-radius: 20px;
                 }
     
@@ -58,6 +59,7 @@
                         width: auto;
                         font-weight: 300;
                         font-size: small;
+                        margin-bottom: 5px;
                     }
                 }
             }

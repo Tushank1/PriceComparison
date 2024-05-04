@@ -11,7 +11,15 @@ function PatioGardern() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/gardern&Patio", {
+              state: { title: "Gardern & Patio" },
+            });
+          }}
+        >
+          Gardern & Patio
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

@@ -11,7 +11,15 @@ function EntertainmentGaming() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/gaming&Entertainment", {
+              state: { title: "Gaming & Entertainment" },
+            });
+          }}
+        >
+          Gaming & Entertainment
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

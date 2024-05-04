@@ -4,7 +4,7 @@ import { RxSlash } from "react-icons/rx";
 import InteriorCart from "./InteriorCart";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function DoYourself({ Doityourself }) {
+function Element({ extra }) {
   const navigate = useNavigate();
   const location = useLocation();
   const title = location.state?.title;
@@ -26,7 +26,7 @@ function DoYourself({ Doityourself }) {
       <div className="main">
         <h1>{title}</h1>
         <div className="mainCart">
-          {Doityourself?.map((interior) => {
+          {extra?.map((interior) => {
             return (
               <InteriorCart
                 key={interior.id}
@@ -47,4 +47,4 @@ function DoYourself({ Doityourself }) {
   );
 }
 
-export default DoYourself;
+export default Element;

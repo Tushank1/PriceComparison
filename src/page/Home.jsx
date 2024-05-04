@@ -11,8 +11,11 @@ import Beauty from "../Data/Beauty";
 import Phones from "../Data/Phone";
 import Perfume from "../Data/Perfume";
 import Banner_2 from "../components/Banner_2";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Body_top />
@@ -21,6 +24,7 @@ function Home() {
         title="Popular Products right now"
         subtitle="See all popular products"
         popularProducts={PopularProducts}
+        onSubTitleClick={() => navigate("/popularProducts")}
       />
       <ItemData
         title="The best deals of the day"

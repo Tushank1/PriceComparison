@@ -11,7 +11,15 @@ function FamilyKids() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>FamilyKids</h1>
+        <h1
+          onClick={() => {
+            navigate("/kids&Family", {
+              state: { title: "Kids & Family" },
+            });
+          }}
+        >
+          Kids & Family
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

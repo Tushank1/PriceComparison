@@ -11,7 +11,15 @@ function WearablesPhones() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/phones&Wearables", {
+              state: { title: "Phones & Wearables" },
+            });
+          }}
+        >
+          Phones & Wearables
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

@@ -12,7 +12,15 @@ function IconContent() {
     <>
       <div className="allcontent">
         <div className="main">
-          <h1>Home</h1>
+          <h1
+            onClick={() => {
+              navigate("/home&Interior", {
+                state: { title: "Home & Interior" },
+              });
+            }}
+          >
+            Home & Interior
+          </h1>
           <div className="cancel">
             <MdCancel
               onClick={() => {

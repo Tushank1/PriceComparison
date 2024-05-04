@@ -12,12 +12,13 @@ function ItemData({
   phones,
   beauty,
   perfume,
+  onSubTitleClick,
 }) {
   return (
     <div className="main_container">
       <div className="heading">
         <h1>{title}</h1>
-        <p>{subtitle}</p>
+        <p onClick={onSubTitleClick}>{subtitle}</p>
         <div className="row">
           {popularProducts?.map((products) => {
             return (

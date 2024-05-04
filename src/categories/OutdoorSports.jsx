@@ -13,7 +13,15 @@ function OutdoorSports() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/sportsOutdoor", {
+              state: { title: "Sports & Outdoor" },
+            });
+          }}
+        >
+          Sports & Outdoor
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

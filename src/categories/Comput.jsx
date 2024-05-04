@@ -11,7 +11,15 @@ function Comput() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/computing", {
+              state: { title: "Computing" },
+            });
+          }}
+        >
+          Computing
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

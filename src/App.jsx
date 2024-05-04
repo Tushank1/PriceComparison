@@ -19,9 +19,10 @@ import Photograph from "./page/Photograph";
 import Cloth from "./page/Cloth";
 import HealthBeauty from "./page/Health&Beauty";
 import SportsOutdoor from "./page/Sports&Outdoor";
-import DoItYourself from "./page/DoItYourself";
 import Motor from "./page/Motor";
 import Categories from "./page/Categories";
+import ExtraElement from "./page/ExtraElement";
+import PopularProduct from "./products/PopularProducts";
 
 function App() {
   return (
@@ -49,9 +50,10 @@ function App() {
             <Route path="/clothing" element={<Cloth />} />
             <Route path="/health&Beauty" element={<HealthBeauty />} />
             <Route path="/sportsOutdoor" element={<SportsOutdoor />} />
-            <Route path="/yourself" element={<DoItYourself />} />
+            <Route path="/yourself" element={<ExtraElement />} />
             <Route path="/MotorTransport" element={<Motor />} />
             <Route path="/categories" element={<Categories />} />
+            <Route path="/popularProducts" element={<PopularProduct />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>

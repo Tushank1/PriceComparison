@@ -11,7 +11,15 @@ function TransportMotor() {
   return (
     <div className="allcontent">
       <div className="main">
-        <h1>Patio</h1>
+        <h1
+          onClick={() => {
+            navigate("/MotorTransport", {
+              state: { title: "Motor Transport" },
+            });
+          }}
+        >
+          Motor Transport
+        </h1>
         <div className="cancel">
           <MdCancel
             onClick={() => {

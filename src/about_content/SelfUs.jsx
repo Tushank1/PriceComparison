@@ -3,7 +3,7 @@ import "./self.css";
 
 function SelfUs() {
   return (
-    <div className="main">
+    <div className="main_about">
       <h1>About Us</h1>
       <span>
         PriceCompare ambition is to offer consumers a fantastic service. You can
@@ -43,7 +43,7 @@ function SelfUs() {
       <p>
         We are a team of 175 ambitious PriceCompare who work to develop the best
         service for comparison shopping.{" "}
-        <span className="extra">
+        <span className="extra_about">
           {" "}
           PriceCompare is completely independent; we are not owned by or
           dependent on any manufacturer, retailer or other organisation that
