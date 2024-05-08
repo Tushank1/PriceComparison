@@ -23,6 +23,7 @@ import Motor from "./page/Motor";
 import Categories from "./page/Categories";
 import ExtraElement from "./page/ExtraElement";
 import PopularProduct from "./products/PopularProducts";
+import Deal from "./products/Deal";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
             <Route path="/MotorTransport" element={<Motor />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/popularProducts" element={<PopularProduct />} />
+            <Route path="/deal" element={<Deal />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>

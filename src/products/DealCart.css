@@ -1,0 +1,133 @@
+.dealcart {
+    width: 25%;
+    height: 320px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.058);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-left: 4px;
+    flex-wrap: wrap;
+
+    img {
+        display: block;
+        align-items: center;
+        margin-top: 20px;
+        transition: transform 0.6s ease-in-out;
+
+        &:hover {
+            transform: scale(1.085);
+        }
+    }
+
+    .dealtext {
+        position: absolute;
+        display: flex;
+        top: 10px;
+        left: 2px;
+        z-index: 1;
+        width: 200px;
+        height: 34px;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        span{
+            margin-left: 10px;
+            font-size: small;
+            font-weight: 400;
+            width: 89px;
+            height: 20px;
+            /* border: 1px solid black; */
+            background-color: #d1ffe3;
+        }
+
+
+        .dealheart {
+            font-size: xx-small;
+            /* padding-right: 10px; */
+            width: 40px;
+            height: 100%;
+            /* border: 1px solid black; */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+
+            &:hover {
+                color: aqua;
+                background-color: whitesmoke;
+                /* border-radius: 50%; */
+                /* width: 50px;
+                height: 50px; */
+                /* transform: scale(1.08); */
+            }
+        }
+    }
+
+    .dealdetail {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .dealname {
+            /* border: 1px solid black; */
+            width: 209px;
+            height: 50px;
+            font-weight: 600;
+            letter-spacing: 3;
+            padding-left: 8px;
+
+        }
+
+        .dealextra {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            /* border: 1px solid black; */
+            width: 190px;
+            margin-left: 10px;
+        }
+
+        .dealother_stuff {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .euro {
+                font-weight: bolder;
+            }
+            span {
+                font-size: medium;
+                font-weight: bolder;
+            }
+        }
+        .dealrating {
+            display: flex;
+            flex-direction: row;
+            width: 45px;
+            height: 25px;
+            /* border: 1px solid black; */
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            .dealstar {
+                margin-right: 2px;
+                color: #f3bf03;
+                font-size: xx-large;
+            }
+        }
+    }
+}

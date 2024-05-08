@@ -30,6 +30,7 @@ function Home() {
         title="The best deals of the day"
         subtitle="Find all deals in one place!"
         bestDeal={BestDeal}
+        onSubTitleClick={() => navigate("/deal")}
       />
       <Banner />
       <ItemData

@@ -46,7 +46,7 @@ function Header() {
           <span>Expert reviews</span>
         </div>
         <div className="header_element">
-          <span>Sales</span>
+          <span onClick={() => navigate("/deal")}>Sales</span>
         </div>
         <div className="header_element">
           <span>Guides</span>
