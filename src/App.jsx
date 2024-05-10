@@ -24,6 +24,8 @@ import Categories from "./page/Categories";
 import ExtraElement from "./page/ExtraElement";
 import PopularProduct from "./products/PopularProducts";
 import Deal from "./products/Deal";
+import First from "./guidePages/H&I/First";
+import Second from "./guidePages/H&I/Second";
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
             <Route path="/categories" element={<Categories />} />
             <Route path="/popularProducts" element={<PopularProduct />} />
             <Route path="/deal" element={<Deal />} />
+            <Route path="/first" element={<First />} />
+            <Route path="/second" element={<Second />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>

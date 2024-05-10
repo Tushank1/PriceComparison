@@ -37,10 +37,6 @@
             left: 3%;
             flex-direction: column;
 
-            .dealHead {
-                
-            }
-
             .dealPara {
                 font-weight: 370;
             }
@@ -108,10 +104,6 @@
                     flex-direction: row;
                     justify-content: space-between;
                     cursor: pointer;
-
-                    .dealsaleText {
-
-                    }
 
                     .dealicon {
                         display: flex;
