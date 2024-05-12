@@ -28,6 +28,11 @@ import First from "./guidePages/H&I/First";
 import Second from "./guidePages/H&I/Second";
 import Third from "./guidePages/H&I/Third";
 import Fourth from "./guidePages/H&I/Fourth";
+import Five from "./guidePages/H&I/Five";
+import Six from "./guidePages/H&I/Six";
+import Seven from "./guidePages/H&I/Seven";
+import Eight from "./guidePages/H&I/Eight";
+import Nine from "./guidePages/H&I/Nine";
 
 function App() {
   return (
@@ -64,6 +69,11 @@ function App() {
             <Route path="/second" element={<Second />} />
             <Route path="/third" element={<Third />} />
             <Route path="/fourth" element={<Fourth />} />
+            <Route path="/five" element={<Five />} />
+            <Route path="/six" element={<Six />} />
+            <Route path="/seven" element={<Seven />} />
+            <Route path="/eight" element={<Eight />} />
+            <Route path="/nine" element={<Nine />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>
