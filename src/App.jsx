@@ -33,6 +33,11 @@ import Six from "./guidePages/H&I/Six";
 import Seven from "./guidePages/H&I/Seven";
 import Eight from "./guidePages/H&I/Eight";
 import Nine from "./guidePages/H&I/Nine";
+import Ten from "./guidePages/H&I/Ten";
+import Twelve from "./guidePages/H&I/Twelve";
+import Eleven from "./guidePages/H&I/Eleven";
+import Fourteen from "./guidePages/H&I/Fourteen";
+import Thirteen from "./guidePages/H&I/Thirteen";
 
 function App() {
   return (
@@ -74,6 +79,11 @@ function App() {
             <Route path="/seven" element={<Seven />} />
             <Route path="/eight" element={<Eight />} />
             <Route path="/nine" element={<Nine />} />
+            <Route path="/ten" element={<Ten />} />
+            <Route path="/eleven" element={<Eleven />} />
+            <Route path="/twelve" element={<Twelve />} />
+            <Route path="/thirteen" element={<Thirteen />} />
+            <Route path="/fourteen" element={<Fourteen />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>
