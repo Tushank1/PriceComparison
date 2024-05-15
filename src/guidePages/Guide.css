@@ -133,5 +133,9 @@
             }
 
         }
+
+        .guide_div {
+            color: red;
+        }
     }
 }

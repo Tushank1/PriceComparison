@@ -1,12 +1,19 @@
 import React from "react";
 import { TbSlash } from "react-icons/tb";
 import "./Guide.css";
+import { useNavigate } from "react-router-dom";
+import G_H_I from "../Data/G_H&I";
 
 function Guide() {
+  const navigate = useNavigate();
+
+  const Data = () => {};
   return (
     <div className="guidefull">
       <div className="guidetop">
-        <span className="guide_start">Start</span>
+        <span className="guide_start" onClick={() => navigate("/")}>
+          Start
+        </span>
         <TbSlash className="guideIcon" />
         <span className="guide_guide">Guides</span>
       </div>
@@ -31,10 +38,13 @@ function Guide() {
             </option>
           </select>
         </div>
-        <div className="guide_H_I">
+        {/* <div className="guide_H_I">
           <h2>Home & Interior</h2>
           <div className="guide_cart">
-            <div className="guide_H_I_content">
+            <div
+              className="guide_H_I_content"
+              onClick={() => navigate("/first")}
+            >
               <img
                 src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
                 alt=""
@@ -136,8 +146,24 @@ function Guide() {
               />
               <h3>Unexpected Air Fryer Recipes</h3>
               <span>By Zara Andrén</span>
-            </div>
-          </div>
+            </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        <div className="guide_H_I">
+          {G_H_I.map((val, index) => {
+            return (
+              <div key={index}>
+                <div className="guide_H_I_content">
+                  <img src={val.img} />
+                  <h5>{val.heading}</h5>
+                  <span>
+                    By <span>{val.name}</span>
+                  </span>
+                  <p>{val.desc.slice(0, 89) + "..."}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
