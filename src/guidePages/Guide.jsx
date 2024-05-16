@@ -1,13 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { TbSlash } from "react-icons/tb";
 import "./Guide.css";
 import { useNavigate } from "react-router-dom";
-import G_H_I from "../Data/G_H&I";
+import G_H_I from "./G_H_I";
+import G_K_F from "./G_K_F";
+import G_C_A from "./G_C_A";
+import G_ALL from "./G_ALL";
 
 function Guide() {
   const navigate = useNavigate();
+  const [currentPage, setCurrentPage] = useState("content1");
 
-  const Data = () => {};
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    switch (selectedCategory) {
+      case "Home & Interior":
+        setCurrentPage("content2");
+        break;
+      case "Kids & Family":
+        setCurrentPage("content3");
+        break;
+      case "Clothing & Accessories":
+        setCurrentPage("content4");
+        break;
+      default:
+        setCurrentPage("content1");
+    }
+  };
+
+  const renderContent = () => {
+    switch (currentPage) {
+      case "content1":
+        return <G_ALL />;
+      case "content2":
+        return <G_H_I />;
+      case "content3":
+        return <G_K_F />;
+      case "content4":
+        return <G_C_A />;
+    }
+  };
+
   return (
     <div className="guidefull">
       <div className="guidetop">
@@ -29,7 +62,7 @@ function Guide() {
           </p>
         </div>
         <div className="guide_select">
-          <select name="category" id="category">
+          <select name="category" id="category" onChange={handleCategoryChange}>
             <option value="Choose category">Choose category</option>
             <option value="Home & Interior">Home & Interior</option>
             <option value="Kids & Family">Kids & Family</option>
@@ -38,133 +71,7 @@ function Guide() {
             </option>
           </select>
         </div>
-        {/* <div className="guide_H_I">
-          <h2>Home & Interior</h2>
-          <div className="guide_cart">
-            <div
-              className="guide_H_I_content"
-              onClick={() => navigate("/first")}
-            >
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>
-                By <span>Zara Andrén</span>
-              </span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-          </div>
-        </div>
-        <div className="guide_H_I">
-          <h2>kids & Family</h2>
-          <div className="guide_cart">
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div>
-            <div className="guide_H_I_content">
-              <img
-                src="https://www.pricerunner.com/images/assets/content/bit/board/uk_pricerunner_airfryer_creative-recipies_og.jpeg?d=410x230"
-                alt=""
-              />
-              <h3>Unexpected Air Fryer Recipes</h3>
-              <span>By Zara Andrén</span>
-            </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        <div className="guide_H_I">
-          {G_H_I.map((val, index) => {
-            return (
-              <div key={index}>
-                <div className="guide_H_I_content">
-                  <img src={val.img} />
-                  <h5>{val.heading}</h5>
-                  <span>
-                    By <span>{val.name}</span>
-                  </span>
-                  <p>{val.desc.slice(0, 89) + "..."}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {renderContent()}
       </div>
     </div>
   );

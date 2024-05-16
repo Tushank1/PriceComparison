@@ -11,7 +11,7 @@ function Six() {
       <div className="guidetop">
         <span onClick={() => navigate("/")}>Start</span>
         <TbSlash className="icon" />
-        <span>Guides</span>
+        <span onClick={() => navigate("/guide")}>Guides</span>
       </div>
       <div className="guideUpdate">
         <span>Updated 22 September 2023</span>

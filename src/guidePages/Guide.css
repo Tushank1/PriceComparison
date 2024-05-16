@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 1100px;
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: 40px;
 
     .guidetop {
@@ -11,7 +11,7 @@
         flex-direction: row;
         height: 28px;
         width: 150px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
@@ -40,15 +40,15 @@
     .guide_head {
         display: flex;
         flex-direction: column;
-        height: 1500px;
+        height: auto;
         width: 95%;
-        border: 1px solid green;
+        /* border: 1px solid green; */
 
         .guide_heading {
             display: flex;
             width: 150px;
             height: 50px;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             margin-bottom: 15px;
         }
 
@@ -56,7 +56,7 @@
             display: flex;
             height: 65px;
             width: 700px;
-            border: 1px solid pink;
+            /* border: 1px solid pink; */
 
             p {
                 font-size: large;
@@ -88,7 +88,7 @@
             flex-direction: row;
             width: 100%;
             height: auto;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin-top: 30px;
 
             h2 {
@@ -107,8 +107,8 @@
             .guide_H_I_content {
                 display: flex;
                 width: 330px;
-                height: 330px;
-                border: 1px solid red;
+                height: 340px;
+                /* border: 1px solid red; */
                 flex-direction: column;
                 margin-left: 10px;
                 margin-bottom: 20px;
@@ -116,26 +116,31 @@
                 img {
                     border-radius: 20px;
                     object-fit: cover;
+                    margin-top: 0;
                 }
 
                 h3 {
                     font-size: x-large;
                     font-weight: 400;
+                    line-height: 1.3;
+                    margin-bottom: 5px;
                 }
 
                 span {
                     color: gray;
                     font-size: small;
+                    margin-bottom: 6px;
                     span {
-                        font-weight: 600;
+                        font-weight: 700;
                     }
+                }
+
+                p {
+                    font-size: small;
+                    font-weight: 400;
                 }
             }
 
-        }
-
-        .guide_div {
-            color: red;
         }
     }
 }

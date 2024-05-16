@@ -11,7 +11,7 @@ function Twelve() {
       <div className="guidetop">
         <span onClick={() => navigate("/")}>Start</span>
         <TbSlash className="icon" />
-        <span>Guides</span>
+        <span onClick={() => navigate("/guide")}>Guides</span>
       </div>
       <div className="guideUpdate">
         <span>Updated 20 January 2022</span>

@@ -1,0 +1,222 @@
+.twentyone {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 750px;
+    /* border: 1px solid black; */
+    margin-left: 40px;
+
+    .guidetop_twentyone {
+        display: flex;
+        flex-direction: row;
+        height: 25px;
+        width: 150px;
+        /* border: 1px solid pink; */
+        margin-top: 10px;
+        color: black;
+        gap: 10px;
+        align-items: center;
+        justify-content: start;
+
+        .icon_twentyone {
+            color: rgba(128, 128, 128, 0.71);
+        }
+
+        span {
+            font-size: small;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .guideUpdate_twentyone {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color: grey;
+
+        span {
+            font-size: small;
+            font-weight: 400;
+        }
+    }
+
+    .thirdContext_twentyone {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 47px;
+            font-weight: bolder;
+        }
+
+        .guideAuthor_twentyone {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            width: 200px;
+            /* border: 1px solid black; */
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .authorImage_twentyone {
+                height: 100%;
+                width: 40px;
+                display: flex;
+                border: 2px solid white;
+                border-radius: 50%;
+                box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.063);
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .authorName_twentyone {
+                display: flex;
+                margin-left: 20px;
+
+                span {
+                    font-size: medium;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .guideDesc_twentyone {
+            display: flex;
+            letter-spacing: 1;
+
+            p {
+                font-size: large;
+                font-weight: 400;
+
+                span {
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .thirdImage_twentyone {
+            height: auto;
+            width: 750px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        p {
+            font-weight: 350;
+            margin-bottom: 10px;
+        }
+
+        .twentyone_table {
+            display: flex;
+            flex-direction: column;
+
+            .twentyone_table_heading {
+                h1 {
+                    font-size: large;
+                    font-weight: 700;
+                }
+            }
+
+            .twentyone_table_para {
+                p {
+                    span {
+                        font-weight: bold;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+
+            .twentyone_table_product {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                /* border: 1px solid black; */
+                border-bottom: 1px solid grey;
+
+                .twentyone_table_product_image {
+                    display: flex;
+                    height: 90%;
+                    width: 80px;
+                    /* border: 1px solid red; */
+                    margin-top: 5px;
+                    margin-left: 5px;
+
+                    img {
+                        object-fit: cover;
+                        height: 80%;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .twentyone_table_product_midContent {
+                    display: flex;
+                    flex-direction: column;
+                    width: 540px;
+                    height: 90px;
+                    /* border: 1px solid black; */
+                    margin-top: 5px;
+
+                    .twentyone_table_product_midContent_one {
+                        padding-left: 10px;
+                        display: flex;
+                        padding-top: 5px;
+                        font-weight: 600;
+                    }
+
+                    .twentyone_table_product_midContent_two {
+                        padding-left: 10px;
+                        display: flex;
+                        padding-top: 5px;
+
+                        p {
+                            font-weight: 450;
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+
+                .twentyone_table_product_button {
+                    display: flex;
+                    width: 100px;
+                    height: 30px;
+                    /* border: 1px solid black; */
+                    margin-top: 35px;
+                    margin-left: 5px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 10px;
+
+                    span {
+                        padding-left: 9px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@ function Second() {
       <div className="secondtop">
         <span onClick={() => navigate("/")}>Start</span>
         <TbSlash className="icon" />
-        <span>Guides</span>
+        <span onClick={() => navigate("/guide")}>Guides</span>
       </div>
       <div className="secondUpdate">
         <span>Updated 24 October 2023</span>

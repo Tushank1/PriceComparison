@@ -11,7 +11,7 @@ function First() {
       <div className="guidetop">
         <span onClick={() => navigate("/")}>Start</span>
         <TbSlash className="icon" />
-        <span>Guides</span>
+        <span onClick={() => navigate("/guide")}>Guides</span>
       </div>
       <div className="guideUpdate">
         <span>Updated 10 May 2024</span>

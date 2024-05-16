@@ -39,6 +39,13 @@ import Eleven from "./guidePages/H&I/Eleven";
 import Fourteen from "./guidePages/H&I/Fourteen";
 import Thirteen from "./guidePages/H&I/Thirteen";
 import Guide from "./guidePages/Guide";
+import Fifteen from "./guidePages/H&I/Fifteen";
+import Sixteen from "./guidePages/H&I/Sixteen";
+import Seventeen from "./guidePages/H&I/Seventeen";
+import Eighteen from "./guidePages/H&I/Eighteen";
+import Nineteen from "./guidePages/H&I/Nineteen";
+import Twenty from "./guidePages/H&I/Twenty";
+import Twentyone from "./guidePages/H&I/Twentyone";
 
 function App() {
   return (
@@ -85,7 +92,14 @@ function App() {
             <Route path="/twelve" element={<Twelve />} />
             <Route path="/thirteen" element={<Thirteen />} />
             <Route path="/fourteen" element={<Fourteen />} />
-            <Route path="guide" element={<Guide />} />
+            <Route path="/fifteen" element={<Fifteen />} />
+            <Route path="/sixteen" element={<Sixteen />} />
+            <Route path="/seventeen" element={<Seventeen />} />
+            <Route path="/eighteen" element={<Eighteen />} />
+            <Route path="/nineteen" element={<Nineteen />} />
+            <Route path="/twenty" element={<Twenty />} />
+            <Route path="/twentyone" element={<Twentyone />} />
+            <Route path="/guide" element={<Guide />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>
