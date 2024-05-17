@@ -1,4 +1,4 @@
-.third {
+.twentythree {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -6,7 +6,7 @@
     /* border: 1px solid black; */
     margin-left: 40px;
 
-    .guidetop {
+    .guidetop_twentythree {
         display: flex;
         flex-direction: row;
         height: 25px;
@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: start;
 
-        .icon {
+        .icon_twentythree {
             color: rgba(128, 128, 128, 0.71);
         }
 
@@ -33,7 +33,7 @@
         }
     }
 
-    .guideUpdate {
+    .guideUpdate_twentythree {
         display: flex;
         margin-top: 20px;
         margin-bottom: 5px;
@@ -45,7 +45,7 @@
         }
     }
 
-    .thirdContext {
+    .thirdContext_twentythree {
         display: flex;
         flex-direction: column;
 
@@ -55,7 +55,45 @@
             line-height: 1.2;
         }
 
-        .guideAuthor {
+        h2 {
+            font-size: xx-large;
+        }
+
+        .heading_span {
+            font-weight: 600;
+            font-size: x-large;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        ul {
+            li {
+                font-weight: 350;
+            }
+        }
+
+        .button2_twentythree {
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 200px;
+            /* border: 1px solid red; */
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 20px;
+                        
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.715);
+            }
+        }
+
+        .guideAuthor_twentythree {
             display: flex;
             flex-direction: row;
             height: 40px;
@@ -65,7 +103,7 @@
             margin-top: 20px;
             margin-bottom: 20px;
 
-            .authorImage {
+            .authorImage_twentythree {
                 height: 100%;
                 width: 40px;
                 display: flex;
@@ -83,7 +121,7 @@
                 }
             }
 
-            .authorName {
+            .authorName_twentythree {
                 display: flex;
                 margin-left: 20px;
 
@@ -94,7 +132,7 @@
             }
         }
 
-        .guideDesc {
+        .guideDesc_twentythree {
             display: flex;
             letter-spacing: 1;
 
@@ -109,7 +147,7 @@
             }
         }
 
-        .thirdImage {
+        .thirdImage_twentythree {
             height: auto;
             width: 750px;
             margin-top: 10px;
@@ -127,7 +165,7 @@
             margin-bottom: 10px;
         }
 
-        .thirdContainer1 {
+        .thirdContainer1_twentythree {
             display: flex;
             flex-direction: row;
             height: 400px;
@@ -137,7 +175,7 @@
             margin-bottom: 20px;
             transition: border 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 
-            .container1Img {
+            .container1Img_twentythree {
                 display: flex;
                 height: 90%;
                 width: 300px;
@@ -155,7 +193,7 @@
                 }
             }
 
-            .container1Content {
+            .container1Content_twentythree {
                 display: flex;
                 flex-direction: column;
                 height: 90%;
@@ -173,7 +211,7 @@
                     font-weight: 400;
                 }
 
-                .price1 {
+                .price1_twentythree {
                     display: flex;
                     flex-direction: row;
                     height: 28px;
@@ -183,7 +221,7 @@
                     font-weight: 600;
                     margin-top: 20px;
 
-                    .containerCompare1 {
+                    .containerCompare1_twentythree {
                         cursor: pointer;
                         &:hover {
                             border-bottom: 2px solid black;
@@ -191,13 +229,13 @@
                     }
                 }
 
-                .container1button {
+                .container1button_twentythree {
                     display: flex;
                     flex-direction: row;
                     margin-top: 20px;
                     gap: 20px;
 
-                    .button1 {
+                    .button1_twentythree {
                         display: flex;
                         background-color: black;
                         color: white;
@@ -213,7 +251,7 @@
                             background-color: rgba(0, 0, 0, 0.715);
                         }
                     }
-                    .button2 {
+                    .button2_twentythree {
                         display: flex;
                         background-color: black;
                         color: white;
@@ -229,7 +267,7 @@
                             background-color: rgba(0, 0, 0, 0.715);
                         }
                     }
-                    .button3 {
+                    .button3_twentythree {
                         display: flex;
                         background-color: black;
                         color: white;
@@ -245,7 +283,7 @@
                             background-color: rgba(0, 0, 0, 0.715);
                         }
                     }
-                    .button4 {
+                    .button4_twentythree {
                         display: flex;
                         background-color: black;
                         color: white;
@@ -262,22 +300,6 @@
                         }
                     }
                 }
-            }
-        }
-
-        h3 {
-            font-size: xx-large;
-            font-weight: 700;
-        }
-
-        ol {
-            margin-left: 30px;
-            margin-bottom: 30px;
-
-            li {
-                font-weight: 400;
-                word-spacing: 1;
-                margin-top: 10px;
             }
         }
     }

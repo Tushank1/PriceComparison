@@ -6,6 +6,7 @@ import G_H_I from "./G_H_I";
 import G_K_F from "./G_K_F";
 import G_C_A from "./G_C_A";
 import G_ALL from "./G_ALL";
+import G_H_B from "./G_H_B";
 
 function Guide() {
   const navigate = useNavigate();
@@ -23,6 +24,9 @@ function Guide() {
       case "Clothing & Accessories":
         setCurrentPage("content4");
         break;
+      case "Health & Beauty":
+        setCurrentPage("content5");
+        break;
       default:
         setCurrentPage("content1");
     }
@@ -38,6 +42,8 @@ function Guide() {
         return <G_K_F />;
       case "content4":
         return <G_C_A />;
+      case "content5":
+        return <G_H_B />;
     }
   };
 
@@ -69,6 +75,7 @@ function Guide() {
             <option value="Clothing & Accessories">
               Clothing & Accessories
             </option>
+            <option value="Health & Beauty">Health & Beauty</option>
           </select>
         </div>
         {renderContent()}

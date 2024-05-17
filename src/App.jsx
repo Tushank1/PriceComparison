@@ -46,6 +46,15 @@ import Eighteen from "./guidePages/H&I/Eighteen";
 import Nineteen from "./guidePages/H&I/Nineteen";
 import Twenty from "./guidePages/H&I/Twenty";
 import Twentyone from "./guidePages/H&I/Twentyone";
+import Twentytwo from "./guidePages/H&I/Twentytwo";
+import Twentythree from "./guidePages/H&I/Twentythree";
+import K_First from "./guidePages/K&F/K_First";
+import K_Second from "./guidePages/K&F/K_Second";
+import K_Third from "./guidePages/K&F/K_Third";
+import K_Fourth from "./guidePages/K&F/K_Fourth";
+import K_Five from "./guidePages/K&F/K_Five";
+import Twentyfour from "./guidePages/H&I/Twentyfour";
+import Twentyfive from "./guidePages/H&I/Twentyfive";
 
 function App() {
   return (
@@ -99,6 +108,15 @@ function App() {
             <Route path="/nineteen" element={<Nineteen />} />
             <Route path="/twenty" element={<Twenty />} />
             <Route path="/twentyone" element={<Twentyone />} />
+            <Route path="/twentytwo" element={<Twentytwo />} />
+            <Route path="/twentythree" element={<Twentythree />} />
+            <Route path="/twentyfour" element={<Twentyfour />} />
+            <Route path="/twentyfive" element={<Twentyfive />} />
+            <Route path="/k_first" element={<K_First />} />
+            <Route path="/k_second" element={<K_Second />} />
+            <Route path="/k_third" element={<K_Third />} />
+            <Route path="/k_fourth" element={<K_Fourth />} />
+            <Route path="/k_five" element={<K_Five />} />
             <Route path="/guide" element={<Guide />} />
             <Route path="/*" element={<Error />} />
           </Routes>

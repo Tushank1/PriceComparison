@@ -9,7 +9,7 @@ function G_K_F() {
     <div className="guide_H_I">
       <h2>Kids & Family</h2>
       <div className="guide_cart">
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/k_first")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-41.jpg?d=410x230"
             alt=""
@@ -23,7 +23,7 @@ function G_K_F() {
             look like sacks. On the contrary...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/third")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-38.jpg?d=410x230"
             alt=""
@@ -37,7 +37,10 @@ function G_K_F() {
             order to it. Check out...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/k_second")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-40.jpg?d=410x230"
             alt=""
@@ -51,7 +54,7 @@ function G_K_F() {
             thing to do and something often...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/k_third")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/giftguide-baby.jpg?d=410x230"
             alt=""
@@ -65,7 +68,10 @@ function G_K_F() {
             one of your siblings has...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/k_fourth")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-9.jpg?d=410x230"
             alt=""
@@ -79,7 +85,7 @@ function G_K_F() {
             seasonal Christmas bedding? We’ve...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/k_five")}>
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Outdoor-lifestyle/natur_SE.jpg?d=410x230"
             alt=""

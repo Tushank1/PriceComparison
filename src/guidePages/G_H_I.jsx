@@ -194,7 +194,7 @@ function G_H_I() {
             want even functional...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/fifteen")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide-giftguide-mom.jpg?d=410x230"
             alt=""
@@ -208,7 +208,7 @@ function G_H_I() {
             gift for mum are many...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/sixteen")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-12.jpg?d=410x230"
             alt=""
@@ -219,7 +219,10 @@ function G_H_I() {
           </span>
           <p></p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/seventeen")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-9.jpg?d=410x230"
             alt=""
@@ -250,7 +253,10 @@ function G_H_I() {
             that are ideal for a...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/eighteen")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/guide_badge_template-8.jpg?d=410x230"
             alt=""
@@ -264,7 +270,10 @@ function G_H_I() {
             And surely we all sleep better...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/nineteen")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/uk_pricerunner_toplist-vases_og.jpg?d=410x230"
             alt=""
@@ -278,7 +287,7 @@ function G_H_I() {
             bouquets of flowers or single cut blooms and ...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/twenty")}>
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Tech/remote_work.jpg?d=410x230"
             alt=""
@@ -292,7 +301,10 @@ function G_H_I() {
             Here's a list of our 10 top pieces...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/twentyone")}
+        >
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/Cold-brew-guide.jpg?d=410x230"
             alt=""
@@ -306,7 +318,10 @@ function G_H_I() {
             coffee is a delicious coffee speciality...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/twentytwo")}
+        >
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Guide/guide_inredning_sma_balkonger.jpg?d=410x230"
             alt=""
@@ -320,7 +335,10 @@ function G_H_I() {
             to decorate that extra space?...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/twentythree")}
+        >
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Guide/guide_studiedisciplin_studera_hemma.jpg?d=410x230"
             alt=""
@@ -337,7 +355,10 @@ function G_H_I() {
             you our top tips for how...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/twentyfour")}
+        >
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Kids-and-Family/barnaktiviteter_hemma.jpg?d=410x230"
             alt=""
@@ -351,7 +372,10 @@ function G_H_I() {
             appropriate at the moment? When...
           </p>
         </div>
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div
+          className="guide_H_I_content"
+          onClick={() => navigate("/twentyfive")}
+        >
           <img
             src="https://www.pricerunner.com/images/site-gui/list/Guide/guide_tvatta_handerna_ratt.jpg?d=410x230"
             alt=""

@@ -177,17 +177,77 @@ function Twentyone() {
           <div className="twentyone_table_product">
             <div className="twentyone_table_product_image">
               <img
-                src="https://www.pricerunner.com/product/80x80/3004199670/Bodum-Chambord-8-Cup.jpg?ph=true&fmt=avif"
+                src="https://www.pricerunner.com/product/80x80/3010820163/Eva-Solo-Nordic-Kitchen.jpg?ph=true&fmt=avif"
                 alt=""
               />
             </div>
             <div className="twentyone_table_product_midContent">
               <div className="twentyone_table_product_midContent_one">
-                <span>1. Bodum Chambord 8 Cup</span>
+                <span>2. Eva Solo Nordic Kitchen</span>
               </div>
               <div className="twentyone_table_product_midContent_two">
                 <p>
-                  Find deal at Amazon <span>£27.53</span>
+                  Find deal at Nordic Nest <span>£82.97</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/3000478220/Stelton-EM-Classic-8-Cup.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>3. Stelton EM Classic 8 Cup</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Nordic Nest <span>£49.82</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/3001138113/House-Doctor-Nuru.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>4. House Doctor Nuru</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Nordic Nest <span>£26.90</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img src="https://www.pricerunner.com/product/80x80/3000725889/Bialetti-Preziosa-8-Cup.jpg?ph=true&fmt=avif" />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>5. Bialetti Preziosa 8 Cup</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Amazon <span>£27.92</span>
                 </p>
               </div>
             </div>
@@ -196,6 +256,230 @@ function Twentyone() {
             </div>
           </div>
         </div>
+        <div className="twentyone_table">
+          <div className="twentyone_table_heading">
+            <h1>2. The coffee filter is also a simple brewing method</h1>
+          </div>
+          <div className="twentyone_table_para">
+            <p>
+              The coarsely ground beans are first poured into a container that
+              can hold the amount of cold-brewed coffee you want to brew. Then
+              simply pour cold water on the beans and place the container in the
+              fridge for 12-24 hours.
+            </p>
+            <p>
+              Remember to close the container with a lid while the coffee is
+              brewing.
+            </p>
+            <p>Finally, the coffee is filtered through a coffee filter.</p>
+            <img
+              src="https://www.pricerunner.com/images/assets/content/bit/guide/Cold-brew-filtering-GIF.gif"
+              alt=""
+            />
+            <p>
+              We use a <span>Chemex jug for pour over coffee</span> together
+              with a recyclable fabric filter - but you can also use the filter
+              holder (without drip stop) from your coffee machine, or a suitable
+              size funnel and a coffee filter.
+            </p>
+            <p>
+              You may also want to use a sieve to filter out the coarse coffee
+              grounds before pouring the coffee through the filter.
+            </p>
+            <p>
+              <span>A little tip:</span> It may take a while for the coffee to
+              run through regular coffee filters as the fine coffee grounds can
+              get stuck in the filter. It can sometimes be helpful to apply two
+              filters in the filter holder.
+            </p>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/3004203032/Chemex-Classic-6-Cup.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>1. Chemex Classic 6 Cup</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Anather Coffee <span>£40.00</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/3006233603/Kalita-Wave-185.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>2. Kalita Wave 185</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Amazon <span>£45.00</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+        </div>
+        <div className="twentyone_table">
+          <div className="twentyone_table_heading">
+            <h1>3. Special equipment - for the connoisseur</h1>
+          </div>
+          <div className="twentyone_table_para">
+            <p>
+              The two previous methods are straightforward for most people, but
+              some manufacturers have developed{" "}
+              <span>special jugs just for Cold brew.</span>
+            </p>
+            <p>
+              The cold-brewed coffee itself hardly gets much better by using the
+              equipment, but it can make the process of brewing, filtering and
+              storing in the fridge a little easier.
+            </p>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/1699498006/Hario-Cold-Brew.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>1. Hario Cold Brew</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at Anather CremaShop <span>£18.12</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/1695900070/KitchenAid-KCM4212SX.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>2. KitchenAid KCM4212SX</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at EcooKshop <span>£84.99</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+          <div className="twentyone_table_product">
+            <div className="twentyone_table_product_image">
+              <img
+                src="https://www.pricerunner.com/product/80x80/1625767927/Bodum-Bean-Ice-12-Cup.jpg?ph=true&fmt=avif"
+                alt=""
+              />
+            </div>
+            <div className="twentyone_table_product_midContent">
+              <div className="twentyone_table_product_midContent_one">
+                <span>3. Bodum Bean Ice 12 Cup</span>
+              </div>
+              <div className="twentyone_table_product_midContent_two">
+                <p>
+                  Find deal at CoolShop <span>£55.00</span>
+                </p>
+              </div>
+            </div>
+            <div className="twentyone_table_product_button">
+              <span>Go to store</span>
+            </div>
+          </div>
+        </div>
+        <h2>How to make a tasty cold brewed coffee</h2>
+        <p>Strong, mild, sweet, ice cubes - with or without milk?</p>
+        <p>
+          The classic serving is with <span>syrup, milk, and ice cubes.</span>{" "}
+          In the end, the distribution depends on your own taste - so you should
+          probably taste it the first few times until you find out just how you
+          like it.
+        </p>
+        <p>
+          We have used a distribution of milk and coffee of about half of each.
+          You can use whatever milk (and quantity) you want. From skimmed to
+          whole milk, or maybe you prefer a plant-based alternative.
+        </p>
+        <p>
+          You can even{" "}
+          <span>
+            consider if you want to give almond milk or rice milk a go.
+          </span>{" "}
+          Even if you usually prefer plain milk, almond milk, and rice milk, add
+          a unique creamy consistency to the coffee - almost like heavy cream,
+          just without the fat.
+        </p>
+        <img
+          src="https://www.pricerunner.com/images/assets/content/bit/guide/Cold-brew-pouring-milk-GIF.gif"
+          alt=""
+        />
+        <p>
+          Even though a cold-brewed coffee is sweeter in taste, most people
+          would prefer to <span>sweeten the coffee with a good syrup.</span>
+        </p>
+        <p>
+          But syrup tends to settle to the bottom of the glass, so remember to
+          stir well.
+        </p>
+        <p>
+          The selection of coffee syrup is now quite prominent in both
+          supermarkets and speciality stores. The classic flavours are vanilla
+          and caramel syrup, but maybe you are more into nut syrup? Try it out.
+        </p>
+        <p>
+          <span>A little tip</span> is to freeze your coffee leftovers in an{" "}
+          <span>ice cube tray.</span>
+        </p>
+        <img
+          src="https://www.pricerunner.com/images/assets/content/bit/guide/Cold-brew-guide-coffee-ice-cubes.jpg"
+          alt=""
+        />
+        <p>
+          Then you always have coffee cubes ready for your Cold Brew - or for a
+          cup of ice coffee, for that matter.
+        </p>
+        <p>
+          Ice cubes made from coffee do not dilute the coffee taste as they
+          melt.
+        </p>
+        <h2>Happy brewing from all of us at PriceCompare</h2>
+        <p>
+          We’re pretty sure that you’ll have a slightly different opinion on
+          cold coffee from now on.
+        </p>
+        <img
+          src="https://www.pricerunner.com/images/assets/content/bit/guide/Cold-brew-guide-serving.jpg"
+          alt=""
+        />
       </div>
     </div>
   );
