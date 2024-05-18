@@ -8,7 +8,7 @@ function G_H_B() {
     <div className="guide_H_I">
       <h2>Health & Beauty</h2>
       <div className="guide_cart">
-        <div className="guide_H_I_content" onClick={() => navigate("/first")}>
+        <div className="guide_H_I_content" onClick={() => navigate("/b_first")}>
           <img
             src="https://www.pricerunner.com/images/assets/content/bit/guide/pricerunner_selvpleje.jpg?d=410x230"
             alt=""

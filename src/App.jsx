@@ -55,6 +55,7 @@ import K_Fourth from "./guidePages/K&F/K_Fourth";
 import K_Five from "./guidePages/K&F/K_Five";
 import Twentyfour from "./guidePages/H&I/Twentyfour";
 import Twentyfive from "./guidePages/H&I/Twentyfive";
+import B_First from "./guidePages/H&B/B_First";
 
 function App() {
   return (
@@ -117,6 +118,7 @@ function App() {
             <Route path="/k_third" element={<K_Third />} />
             <Route path="/k_fourth" element={<K_Fourth />} />
             <Route path="/k_five" element={<K_Five />} />
+            <Route path="/b_first" element={<B_First />} />
             <Route path="/guide" element={<Guide />} />
             <Route path="/*" element={<Error />} />
           </Routes>
