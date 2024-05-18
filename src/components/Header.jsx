@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import { FaAngleDown } from "react-icons/fa6";
+import { IoSearch } from "react-icons/io5";
 
 function Header() {
   const navigate = useNavigate();
@@ -35,10 +37,8 @@ function Header() {
             }}
           >
             <span>All categories</span>
-            <img
-              src="/arrowDown.png"
-              alt="ArrowDown"
-              className={isArrowRotated ? "rotated" : ""}
+            <FaAngleDown
+              className={isArrowRotated ? "rotated" : "" || "arrow"}
             />
           </div>
         </div>
@@ -73,7 +73,7 @@ function Header() {
 
       <div className="header_right">
         <div className="searchbar">
-          <img src="/search.png" alt="Search Icon" />
+          <IoSearch className="searchIcon" />
           <input type="text" placeholder="Search Products..." />
         </div>
         <div className="Signin">

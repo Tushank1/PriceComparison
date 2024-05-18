@@ -67,12 +67,10 @@
         
         .rotated {
             transform: rotate(180deg);
+            margin-left: 10px;
         }
         
-        img {
-            width: 10px;
-            height: 10px;
-            filter: invert(1);
+        .arrow {
             margin-left: 10px;
         }
 
@@ -113,7 +111,7 @@
     }
     
 
-    img {
+    .searchIcon {
         width: 18px;
         height: 18px;
         filter: invert(1);
@@ -121,6 +119,7 @@
         display: flex;
         font-size: larger;
         font-weight: bold;
+        filter: 1;
     }
 }
 

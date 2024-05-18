@@ -2,6 +2,7 @@ import React from "react";
 import "./Deal.css";
 import BestDeal from "../Data/BestDeal";
 import Dealcart from "./Dealcart";
+import { FaAngleDown } from "react-icons/fa6";
 
 function Deal() {
   return (
@@ -37,7 +38,7 @@ function Deal() {
                   <p>Sale</p>
                 </div>
                 <div className="dealicon">
-                  <img src="./arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
               <div className="dealcontent">
@@ -75,7 +76,7 @@ function Deal() {
                   <p>Price</p>
                 </div>
                 <div className="dealicon">
-                  <img src="./arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
               <div className="dealgraph"></div>
@@ -107,7 +108,7 @@ function Deal() {
                   <p>Category</p>
                 </div>
                 <div className="dealicon">
-                  <img src="./arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
               <div className="searching">
@@ -162,7 +163,7 @@ function Deal() {
                   <p>Retailer</p>
                 </div>
                 <div className="dealicon">
-                  <img src="./arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
               <div className="searching">
@@ -217,7 +218,7 @@ function Deal() {
                   <p>Brand</p>
                 </div>
                 <div className="dealicon">
-                  <img src="./arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
               <div className="searching">
@@ -277,7 +278,7 @@ function Deal() {
                   <p>Sort by best</p>
                 </div>
                 <div className="dealRightSortImage">
-                  <img src="/arrowDown.png" alt="" />
+                  <FaAngleDown />
                 </div>
               </div>
             </div>

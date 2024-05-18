@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ItemCart.css";
 import { LuHeart } from "react-icons/lu";
 import { GrStar } from "react-icons/gr";
 import { LuEuro } from "react-icons/lu";
+// import { useLocation } from "react-router-dom";
 
-function ItemCart({ id, name, price, img, rating }) {
+function ItemCart({ id, name, price, img, rating, onItemSelect }) {
+  // const location = useLocation();
+  const [show, setShow] = useState([]);
+
+  // const handleClick = () => {
+  //   if (show) {
+  //     onItemSelect({ id, name, price, img, rating });
+  //     // location.push(`/product${item.id}`);
+  //   } else {
+  //     setShow(null);
+  //   }
+  // };
+
+  const handleClick = () => {
+    if (show) {
+      onItemSelect({ id, name, price, img, rating });
+      setShow(false); // Assuming 'show' should be a boolean
+    } else {
+      setShow(true);
+    }
+  };
+
   return (
     <>
-      <div className="cart">
+      <div className="cart" onClick={handleClick}>
         <img src={img} alt="" />
         <div className="text">
           <span>200+watching</span>
