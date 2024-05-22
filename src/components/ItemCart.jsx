@@ -3,11 +3,12 @@ import "./ItemCart.css";
 import { LuHeart } from "react-icons/lu";
 import { GrStar } from "react-icons/gr";
 import { LuEuro } from "react-icons/lu";
-// import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function ItemCart({ id, name, price, img, rating, onItemSelect }) {
+function ItemCart({ id, name, price, img, rating }) {
   // const location = useLocation();
-  const [show, setShow] = useState([]);
+  const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   // const handleClick = () => {
   //   if (show) {
@@ -19,18 +20,14 @@ function ItemCart({ id, name, price, img, rating, onItemSelect }) {
   // };
 
   const handleClick = () => {
-    if (show) {
-      onItemSelect({ id, name, price, img, rating });
-      setShow(false); // Assuming 'show' should be a boolean
-    } else {
-      setShow(true);
-    }
+    // console.log(id);
+    navigate(`/product?id=${id}`);
   };
 
   return (
     <>
       <div className="cart" onClick={handleClick}>
-        <img src={img} alt="" />
+        <img src={img} alt={`Image of ${name}`} />
         <div className="text">
           <span>200+watching</span>
           <LuHeart className="heart" />

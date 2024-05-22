@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Product_top.css";
 import { BsSlashLg } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
@@ -8,11 +8,35 @@ import { HiOutlineBellAlert } from "react-icons/hi2";
 import { FaScaleUnbalanced } from "react-icons/fa6";
 import { RxDotsVertical } from "react-icons/rx";
 import PriceComparison from "./PriceComparison.jsx";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { data } from "../Data/Productdata.js";
 // import Product_bottom from "./Product_bottom.jsx";
 
-function Product_top({ item }) {
+function Product_top() {
   const navigate = useNavigate();
+  const [params, setParams] = useSearchParams();
+  console.log(data["1"]);
+  const [item, setItem] = useState(data[params.get("id")]);
+
+  // useEffect(() => {
+  //   let arr = [
+  //     {
+  //       id: 1,
+  //       name: "abhi",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "akash",
+  //     },
+  //   ];
+  //   let arr = [1, 2, 3, 4, 5];
+  //   console.log(arr);
+  //   arr.map((obj) => {
+  //     console.log(obj);
+  //   });
+  // }, []);
+
+  console.log(params.get("id"));
   return (
     <>
       <div>
@@ -21,11 +45,11 @@ function Product_top({ item }) {
             <div className="heading_head">
               <span onClick={() => navigate("/")}>Start</span>
               <BsSlashLg className="icon" />
-              <span onClick={() => navigate("/phones&Wearables")}>
+              {/* <span onClick={() => navigate("/phones&Wearables")}>
                 Phone & Wearables
               </span>
               <BsSlashLg className="icon" />
-              <span>Mobile Phones</span>
+              <span>Mobile Phones</span> */}
             </div>
             <div className="bottom">
               <div className="image">
@@ -70,15 +94,12 @@ function Product_top({ item }) {
                   </div>
                 </div>
                 <div className="description">
-                  <p>
-                    High performance, superior camera quality and a large
-                    display–meet the iPhone 15 Pro Max.
-                  </p>
+                  <p>{item.desc}</p>
                   <span>Read more</span>
                 </div>
                 <PriceComparison
-                  priceRange={{ min: "£1,005.00", max: "£2,038.53" }}
-                  popularity={{ rank: "1", category: "Mobile Phones" }}
+                  priceRange={{ min: item.min, max: item.max }}
+                  popularity={{ rank: item.rank, category: item.category }}
                 />
               </div>
             </div>

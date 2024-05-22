@@ -13,7 +13,7 @@
     width: 370px;
     /* border: 1px solid black; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     cursor: pointer;
     
     span {
