@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./page/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Error from "./page/Error";
 import Product from "./page/Product";
@@ -56,74 +61,97 @@ import K_Five from "./guidePages/K&F/K_Five";
 import Twentyfour from "./guidePages/H&I/Twentyfour";
 import Twentyfive from "./guidePages/H&I/Twentyfive";
 import B_First from "./guidePages/H&B/B_First";
+import LoginPage from "./components/LoginPage";
+import { useDispatch, useSelector } from "react-redux";
+import { logIn, selectUser } from "./feature/userSlice";
+import { auth } from "./firebase";
 
 function App() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        dispatch(
+          logIn({
+            displayName: user.displayName,
+            email: user.email,
+          })
+        );
+      }
+    });
+  }, []);
   return (
     <>
-      <div className="app">
-        <Router>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/info" element={<How_to_use />} />
-            <Route path="/about" element={<About_us />} />
-            <Route path="/home&Interior" element={<Interior />} />
-            <Route path="/gardern&Patio" element={<Patio />} />
-            <Route path="/kids&Family" element={<KidsFamily />} />
-            <Route path="/computing" element={<Computing />} />
-            <Route path="/toys&Hobbies" element={<ToysHobbies />} />
-            <Route
-              path="/gaming&Entertainment"
-              element={<GamingEntertainment />}
-            />
-            <Route path="/phones&Wearables" element={<Wearables />} />
-            <Route path="/sound&Vision" element={<Vision />} />
-            <Route path="/photography" element={<Photograph />} />
-            <Route path="/clothing" element={<Cloth />} />
-            <Route path="/health&Beauty" element={<HealthBeauty />} />
-            <Route path="/sportsOutdoor" element={<SportsOutdoor />} />
-            <Route path="/yourself" element={<ExtraElement />} />
-            <Route path="/MotorTransport" element={<Motor />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/popularProducts" element={<PopularProduct />} />
-            <Route path="/deal" element={<Deal />} />
-            <Route path="/first" element={<First />} />
-            <Route path="/second" element={<Second />} />
-            <Route path="/third" element={<Third />} />
-            <Route path="/fourth" element={<Fourth />} />
-            <Route path="/five" element={<Five />} />
-            <Route path="/six" element={<Six />} />
-            <Route path="/seven" element={<Seven />} />
-            <Route path="/eight" element={<Eight />} />
-            <Route path="/nine" element={<Nine />} />
-            <Route path="/ten" element={<Ten />} />
-            <Route path="/eleven" element={<Eleven />} />
-            <Route path="/twelve" element={<Twelve />} />
-            <Route path="/thirteen" element={<Thirteen />} />
-            <Route path="/fourteen" element={<Fourteen />} />
-            <Route path="/fifteen" element={<Fifteen />} />
-            <Route path="/sixteen" element={<Sixteen />} />
-            <Route path="/seventeen" element={<Seventeen />} />
-            <Route path="/eighteen" element={<Eighteen />} />
-            <Route path="/nineteen" element={<Nineteen />} />
-            <Route path="/twenty" element={<Twenty />} />
-            <Route path="/twentyone" element={<Twentyone />} />
-            <Route path="/twentytwo" element={<Twentytwo />} />
-            <Route path="/twentythree" element={<Twentythree />} />
-            <Route path="/twentyfour" element={<Twentyfour />} />
-            <Route path="/twentyfive" element={<Twentyfive />} />
-            <Route path="/k_first" element={<K_First />} />
-            <Route path="/k_second" element={<K_Second />} />
-            <Route path="/k_third" element={<K_Third />} />
-            <Route path="/k_fourth" element={<K_Fourth />} />
-            <Route path="/k_five" element={<K_Five />} />
-            <Route path="/b_first" element={<B_First />} />
-            <Route path="/guide" element={<Guide />} />
-            <Route path="/*" element={<Error />} />
-          </Routes>
-        </Router>
-      </div>
+      <Router>
+        {!user ? (
+          <LoginPage />
+        ) : (
+          <div className="app">
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/info" element={<How_to_use />} />
+              <Route path="/about" element={<About_us />} />
+              <Route path="/home&Interior" element={<Interior />} />
+              <Route path="/gardern&Patio" element={<Patio />} />
+              <Route path="/kids&Family" element={<KidsFamily />} />
+              <Route path="/computing" element={<Computing />} />
+              <Route path="/toys&Hobbies" element={<ToysHobbies />} />
+              <Route
+                path="/gaming&Entertainment"
+                element={<GamingEntertainment />}
+              />
+              <Route path="/phones&Wearables" element={<Wearables />} />
+              <Route path="/sound&Vision" element={<Vision />} />
+              <Route path="/photography" element={<Photograph />} />
+              <Route path="/clothing" element={<Cloth />} />
+              <Route path="/health&Beauty" element={<HealthBeauty />} />
+              <Route path="/sportsOutdoor" element={<SportsOutdoor />} />
+              <Route path="/yourself" element={<ExtraElement />} />
+              <Route path="/MotorTransport" element={<Motor />} />
+              <Route path="/categories" element={<Categories />} />
+              <Route path="/popularProducts" element={<PopularProduct />} />
+              <Route path="/deal" element={<Deal />} />
+              <Route path="/first" element={<First />} />
+              <Route path="/second" element={<Second />} />
+              <Route path="/third" element={<Third />} />
+              <Route path="/fourth" element={<Fourth />} />
+              <Route path="/five" element={<Five />} />
+              <Route path="/six" element={<Six />} />
+              <Route path="/seven" element={<Seven />} />
+              <Route path="/eight" element={<Eight />} />
+              <Route path="/nine" element={<Nine />} />
+              <Route path="/ten" element={<Ten />} />
+              <Route path="/eleven" element={<Eleven />} />
+              <Route path="/twelve" element={<Twelve />} />
+              <Route path="/thirteen" element={<Thirteen />} />
+              <Route path="/fourteen" element={<Fourteen />} />
+              <Route path="/fifteen" element={<Fifteen />} />
+              <Route path="/sixteen" element={<Sixteen />} />
+              <Route path="/seventeen" element={<Seventeen />} />
+              <Route path="/eighteen" element={<Eighteen />} />
+              <Route path="/nineteen" element={<Nineteen />} />
+              <Route path="/twenty" element={<Twenty />} />
+              <Route path="/twentyone" element={<Twentyone />} />
+              <Route path="/twentytwo" element={<Twentytwo />} />
+              <Route path="/twentythree" element={<Twentythree />} />
+              <Route path="/twentyfour" element={<Twentyfour />} />
+              <Route path="/twentyfive" element={<Twentyfive />} />
+              <Route path="/k_first" element={<K_First />} />
+              <Route path="/k_second" element={<K_Second />} />
+              <Route path="/k_third" element={<K_Third />} />
+              <Route path="/k_fourth" element={<K_Fourth />} />
+              <Route path="/k_five" element={<K_Five />} />
+              <Route path="/b_first" element={<B_First />} />
+              <Route path="/guide" element={<Guide />} />
+              <Route path="/*" element={<Error />} />
+            </Routes>
+          </div>
+        )}
+      </Router>
     </>
   );
 }

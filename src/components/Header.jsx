@@ -3,6 +3,9 @@ import "./Header.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { logOut } from "../feature/userSlice";
+import { auth } from "../firebase";
 
 function Header() {
   const navigate = useNavigate();
@@ -10,6 +13,14 @@ function Header() {
   const location = useLocation();
 
   const isArrowRotated = location.pathname === "/categories";
+
+  const dispatch = useDispatch();
+
+  const signOut = () => {
+    auth.signOut().then(() => {
+      dispatch(logOut());
+    });
+  };
 
   return (
     <div className="header">
@@ -76,8 +87,8 @@ function Header() {
           <IoSearch className="searchIcon" />
           <input type="text" placeholder="Search Products..." />
         </div>
-        <div className="Signin">
-          <span>Sign in</span>
+        <div className="Signin" onClick={signOut}>
+          <span>Sign out</span>
         </div>
       </div>
     </div>

@@ -1,0 +1,51 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: white;
+    /* border: 1px solid black; */
+    
+    .login_container {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 290px;
+        /* border: 1px solid black; */
+
+        .login_top {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            width: 100%;
+            /* border: 1px solid black; */
+
+            img {
+                width: 150px;
+                height: 100%;
+                margin-top: 0;
+            }
+
+            .login_text {
+                display: flex;
+                align-items: center;
+
+                h1 {
+                    font-size: 54px;
+                }
+            }
+        }
+
+        button {
+            padding: 25px;
+            font-size: larger;
+            background-color: rgb(76, 76, 243);
+            cursor: pointer;
+            color: white;
+            font-weight: bolder;
+
+            &:hover {
+                background-color: rgba(76, 76, 243, 0.43);
+            }
+        }
+    }
+}
