@@ -6,22 +6,19 @@ import { LuEuro } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
 function ItemCart({ id, name, price, img, rating }) {
-  // const location = useLocation();
-  const [show, setShow] = useState(false);
   const navigate = useNavigate();
+  const [productDetails, setProductDetails] = useState([]);
 
-  // const handleClick = () => {
-  //   if (show) {
-  //     onItemSelect({ id, name, price, img, rating });
-  //     // location.push(`/product${item.id}`);
-  //   } else {
-  //     setShow(null);
-  //   }
-  // };
-
-  const handleClick = () => {
-    // console.log(id);
-    navigate(`/product?id=${id}`);
+  const handleClick = async () => {
+    try {
+      const response = await fetch(`http://127.0.0.1:5000/product/${id}`);
+      const data = response;
+      setProductDetails(data);
+      // console.log(data);
+      navigate(`/product?id=${id}`);
+    } catch (error) {
+      console.log("Failed to fetch product details:", error);
+    }
   };
 
   return (

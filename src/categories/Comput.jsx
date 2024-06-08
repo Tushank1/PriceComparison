@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Computing from "../Data/Computing";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function Comput() {
   const navigate = useNavigate();
+  const [computing, setComputing] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/computing");
+        const data = await response.json();
+        setComputing(data);
+      } catch (error) {
+        console.log("Error Fetching Data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +43,7 @@ function Comput() {
         </div>
       </div>
       <div className="mainCart">
-        {Computing?.map((interior) => {
+        {computing?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

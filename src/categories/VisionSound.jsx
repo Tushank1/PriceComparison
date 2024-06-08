@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import SoundVision from "../Data/SoundVision";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function VisionSound() {
   const navigate = useNavigate();
+  const [sound, setSound] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/sound&Vision");
+        const data = await response.json();
+        setSound(data);
+      } catch (error) {
+        console.log("Error fetcchind data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function VisionSound() {
         </div>
       </div>
       <div className="mainCart">
-        {SoundVision?.map((interior) => {
+        {sound?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

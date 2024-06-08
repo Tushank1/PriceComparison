@@ -1,6 +1,7 @@
 {
   "name": "pricerunner-clone",
   "private": true,
+  "proxy": "http://127.0.0.1:5000/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +14,8 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.7.2",
+    "fetch": "^1.1.0",
     "firebase": "^10.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

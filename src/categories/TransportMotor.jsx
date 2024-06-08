@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Transport from "../Data/Transport";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function TransportMotor() {
   const navigate = useNavigate();
+  const [motor, setMotor] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/motorTransport");
+        const data = await response.json();
+        setMotor(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function TransportMotor() {
         </div>
       </div>
       <div className="mainCart">
-        {Transport?.map((interior) => {
+        {motor?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

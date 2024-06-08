@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Beauty from "../Data/Beauty";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function BeautyHealth() {
   const navigate = useNavigate();
+  const [health, setHealth] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/health&Beauty");
+        const data = await response.json();
+        setHealth(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function BeautyHealth() {
         </div>
       </div>
       <div className="mainCart">
-        {Beauty?.map((interior) => {
+        {health?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

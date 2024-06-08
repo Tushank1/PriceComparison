@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Yourself from "../Data/Youself";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function YourselfItDo() {
   const navigate = useNavigate();
+  const [yourself, setYourself] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/doItYourself");
+        const data = await response.json();
+        setYourself(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function YourselfItDo() {
         </div>
       </div>
       <div className="mainCart">
-        {Yourself?.map((interior) => {
+        {yourself?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import kids from "../Data/KidsFamily";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function FamilyKids() {
   const navigate = useNavigate();
+  const [kids, setkids] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/kids&Family");
+        const data = response.data;
+        setkids(data);
+      } catch (error) {
+        console.log("Error fetchind data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">

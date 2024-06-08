@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import photography from "../Data/Photography";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function Yphoto() {
   const navigate = useNavigate();
+  const [photo, setPhoto] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/photography");
+        const data = await response.json();
+        setPhoto(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function Yphoto() {
         </div>
       </div>
       <div className="mainCart">
-        {photography?.map((interior) => {
+        {photo?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

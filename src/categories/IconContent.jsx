@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import HomeInteriorData from "../Data/HomeInteriorData";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function IconContent() {
   const navigate = useNavigate();
+  const [Interior, setInterior] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/home&Interior");
+        const data = await response.json();
+        setInterior(data);
+      } catch (error) {
+        console.log("Error fetchind data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -30,7 +44,7 @@ function IconContent() {
           </div>
         </div>
         <div className="mainCart">
-          {HomeInteriorData?.map((interior) => {
+          {Interior?.map((interior) => {
             return (
               <InteriorCart
                 key={interior.id}

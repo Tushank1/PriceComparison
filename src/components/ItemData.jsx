@@ -5,13 +5,13 @@ import ItemCart from "./ItemCart";
 function ItemData({
   title,
   subtitle,
-  popularProducts,
-  bestDeal,
-  shoes,
-  sound,
-  phones,
-  beauty,
-  perfume,
+  populardata,
+  bestDealData,
+  shoesData,
+  soundData,
+  phonesData,
+  beautydata,
+  perfumeData,
   onSubTitleClick,
 }) {
   return (
@@ -21,7 +21,29 @@ function ItemData({
           <h1>{title}</h1>
           <p onClick={onSubTitleClick}>{subtitle}</p>
           <div className="row">
-            {popularProducts?.map((products) => {
+            {populardata?.map((product) => (
+              <ItemCart
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                price={product.price}
+                img={product.img}
+                rating={product.rating}
+              />
+            ))}
+            {bestDealData?.map((deals) => {
+              return (
+                <ItemCart
+                  key={deals.id}
+                  id={deals.id}
+                  price={deals.price}
+                  img={deals.img}
+                  rating={deals.rating}
+                  name={deals.name}
+                />
+              );
+            })}
+            {soundData?.map((products) => {
               return (
                 <ItemCart
                   key={products.id}
@@ -33,7 +55,7 @@ function ItemData({
                 />
               );
             })}
-            {bestDeal?.map((products) => {
+            {shoesData?.map((products) => {
               return (
                 <ItemCart
                   key={products.id}
@@ -45,7 +67,7 @@ function ItemData({
                 />
               );
             })}
-            {sound?.map((products) => {
+            {perfumeData?.map((products) => {
               return (
                 <ItemCart
                   key={products.id}
@@ -57,7 +79,7 @@ function ItemData({
                 />
               );
             })}
-            {shoes?.map((products) => {
+            {phonesData?.map((products) => {
               return (
                 <ItemCart
                   key={products.id}
@@ -69,31 +91,7 @@ function ItemData({
                 />
               );
             })}
-            {perfume?.map((products) => {
-              return (
-                <ItemCart
-                  key={products.id}
-                  id={products.id}
-                  price={products.price}
-                  img={products.img}
-                  rating={products.rating}
-                  name={products.name}
-                />
-              );
-            })}
-            {phones?.map((products) => {
-              return (
-                <ItemCart
-                  key={products.id}
-                  id={products.id}
-                  price={products.price}
-                  img={products.img}
-                  rating={products.rating}
-                  name={products.name}
-                />
-              );
-            })}
-            {beauty?.map((products) => {
+            {beautydata?.map((products) => {
               return (
                 <ItemCart
                   key={products.id}

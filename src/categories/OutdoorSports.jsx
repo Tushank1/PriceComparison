@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Sports from "../Data/Sports";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function OutdoorSports() {
   const navigate = useNavigate();
-  const location = useLocation();
-  const title = location.state?.title;
+  const [sports, setSports] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/sports&Outdoor");
+        const data = await response.json();
+        setSports(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -31,7 +42,7 @@ function OutdoorSports() {
         </div>
       </div>
       <div className="mainCart">
-        {Sports?.map((interior) => {
+        {sports?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

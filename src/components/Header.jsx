@@ -85,7 +85,13 @@ function Header() {
       <div className="header_right">
         <div className="searchbar">
           <IoSearch className="searchIcon" />
-          <input type="text" placeholder="Search Products..." />
+          <input
+            name="search"
+            type="search"
+            autoComplete="on"
+            placeholder="Search Products..."
+            onChange={(e) => dispatch(setSearch(e.target.value))}
+          />
         </div>
         <div className="Signin" onClick={signOut}>
           <span>Sign out</span>

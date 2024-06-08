@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import phoneWearables from "../Data/PhoneWearables";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function WearablesPhones() {
   const navigate = useNavigate();
+  const [phone, setPhone] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/phone&Wearables");
+        const data = await response.json();
+        setPhone(data);
+      } catch (error) {
+        console.log("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +42,7 @@ function WearablesPhones() {
         </div>
       </div>
       <div className="mainCart">
-        {phoneWearables?.map((interior) => {
+        {phone?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

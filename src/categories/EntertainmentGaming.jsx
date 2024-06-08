@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Gaming from "../Data/Gaming";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function EntertainmentGaming() {
   const navigate = useNavigate();
+  const [gaming, setGaming] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:5000/gaming&Entertainment"
+        );
+        const data = response.data;
+        setGaming(data);
+      } catch (error) {
+        console.log("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +45,7 @@ function EntertainmentGaming() {
         </div>
       </div>
       <div className="mainCart">
-        {Gaming?.map((interior) => {
+        {gaming?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}

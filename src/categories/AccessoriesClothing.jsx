@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InteriorCart from "../top_bottom/InteriorCart";
-import Clothing from "../Data/Clothing";
 import "./IconContent.css";
 import { MdCancel } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function AccessoriesClothing() {
   const navigate = useNavigate();
+  const [cloth, setcloth] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost:5000/clothing&Accessories"
+        );
+        const data = await response.json();
+        setcloth(data);
+      } catch (error) {
+        console.log("Error fetchinf data:", error);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="allcontent">
@@ -29,7 +44,7 @@ function AccessoriesClothing() {
         </div>
       </div>
       <div className="mainCart">
-        {Clothing?.map((interior) => {
+        {cloth?.map((interior) => {
           return (
             <InteriorCart
               key={interior.id}
